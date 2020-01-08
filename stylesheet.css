@@ -1,0 +1,153 @@
+html {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	-webkit-font-smoothing: antialiased; 
+	font-size: 15px;
+	color: #1a1a1a;
+}
+
+body {
+	text-align: center;
+}
+
+
+a {
+	color: #4a70d1;
+}
+
+a:hover {
+	color: #28489a;
+}
+
+
+
+/* ----------------------------------- Homepage */
+
+.homepage ul {
+	font-size: 19px;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.homepage ul li {
+	margin-bottom: 10px;
+}
+
+
+#social_twitter {
+	margin-right: 35px;
+}
+
+
+@media all and (max-width: 320px) {
+
+	#logo {
+		width: 100%;
+	}
+}
+
+
+@media all and (max-width: 218px) {
+	#social_twitter {
+		display: block;
+		margin: 0 auto 30px auto
+	}
+}
+
+/* ----------------------------------- Teams */
+
+body.team {
+	font-size: 18px;
+}
+
+.side_by_side {
+	width: 666px;
+    margin: 0 auto;
+}
+
+.side_by_side p {
+	float: left;
+}
+
+.side_by_side.tea p {
+    margin-top: 141px;
+}
+
+.side_by_side.ctftime p {
+    margin-top: 80px;
+}
+
+.side_by_side.backend p {
+    margin-top: 50px;
+}
+
+.arm {
+	margin-top: 80px;
+}
+
+.arm img {
+	margin-top: 20px;
+}
+
+.table {
+	margin-top: 40px;
+}
+
+.pentesting p {
+	margin-bottom: 30px;
+}
+
+.backend, .pentesting, .ctftime {
+	margin-top: 140px;
+}
+
+.ctftime {
+	margin-bottom: 100px;
+}
+
+
+
+@media all and (max-width: 845px) {
+
+	img.table {
+		width: 95%;
+	}
+}
+
+
+@media all and (max-width: 710px) {
+
+	.side_by_side {
+		width: 100%;
+	}
+
+	.side_by_side p {
+		float: none;
+	}
+
+	.pentesting img {
+		width: 95%;
+	}
+
+	.side_by_side.tea p {
+		margin-top: 70px;
+	}
+}
+
+
+@media all and (max-width: 480px) {
+
+	.arm img {
+		width: 95%;
+	}
+}
+
+@media all and (max-width: 330px) {
+
+	.backend img {
+		width: 95%;
+	}
+}
+
+
+
+
