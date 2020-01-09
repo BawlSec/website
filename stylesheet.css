@@ -1,42 +1,163 @@
 html {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	-webkit-font-smoothing: antialiased; 
-	font-size: 15px;
+	font-size: 17px;
 	color: #1a1a1a;
 }
 
 body {
-	text-align: center;
+	overflow-y: scroll;
+	text-align: left;
 }
 
 
 a {
-	color: #4a70d1;
+	color: #3b8940;
+	text-decoration: none;
 }
 
 a:hover {
-	color: #28489a;
+	color: #285c2b;
+	text-decoration: underline;
+}
+
+h1 {
+	margin-bottom: 0;
 }
 
 
+/* ----------------------------------- Generic */
 
-/* ----------------------------------- Homepage */
+#wrapper {
+	width: 999px;
+	margin: 0 auto;
+}
 
-.homepage ul {
+#wrapper aside {
+	width: 320px;
+	margin-right: 10px;
+	float: left;
+	overflow: auto;
+
+}
+
+#wrapper #content {
+	width: 666px;
+	float: right;
+}
+
+nav {
+	margin-top: 30px;
+	border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+	overflow: auto;
+
 	font-size: 19px;
 	list-style-type: none;
 	padding-left: 0;
 }
 
-.homepage ul li {
+nav ul li {
+	float: left;
+	margin-left: 30px;
 	margin-bottom: 10px;
 }
 
+nav ul li:first-of-type {
+	margin-left: 0;
+}
+
+nav a {
+	color: #666666;
+	text-decoration: none;
+	padding: 5px;
+}
+
+nav a:hover {
+	color: #3b8940;
+	text-decoration: underline;
+}
+
+nav a.active {
+	color: #1f1f1f;
+	text-decoration: none;
+}
+
+nav a.active:hover {
+	color: #1f1f1f;
+	text-decoration: none;
+}
+
+article {
+	margin-top: 25px;
+}
 
 #social_twitter {
 	margin-right: 35px;
 }
 
+
+
+/* ----------------------------------- Generic restructuring */
+
+
+@media all and (max-width: 1006px) {
+
+	#wrapper {
+		width: 100%;
+	}
+
+	#wrapper #content {
+		width: 550px;
+		float: left;
+	}
+}
+
+@media all and (max-width: 900px) {
+
+	#wrapper #content {
+		width: 440px;
+		float: left;
+	}
+}
+
+
+@media all and (max-width: 790px) {
+
+	#wrapper #content {
+		width: 95%;
+		float: left;
+		margin: 0 15px;
+	}
+
+	#wrapper aside {
+		width: 100%;
+		text-align: center;
+	}
+
+	#wrapper nav {
+		width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+@media all and (max-width: 470px) {
+
+	#wrapper nav {
+		width: 100%;
+	}
+
+	#wrapper nav ul li {
+		width: 100%;
+		clear: left;
+		margin-left: 0;
+		text-align: center;
+	}
+}
 
 @media all and (max-width: 320px) {
 
@@ -53,11 +174,8 @@ a:hover {
 	}
 }
 
-/* ----------------------------------- Teams */
 
-body.team {
-	font-size: 18px;
-}
+/* ----------------------------------- Teams */
 
 .side_by_side {
 	width: 666px;
@@ -150,4 +268,57 @@ body.team {
 
 
 
+/* ----------------------------------- Blog */
+
+
+.post h2 {
+	font-size: 22px;
+	margin: 30px 0 0 0;
+}
+
+.post p {
+	margin-top: 10px;
+}
+
+.post .underline {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #828282;
+}
+
+
+.blog_post .underline {
+	margin-top: 5px;
+
+	color: #828282;
+}
+
+
+
+
+/* ----------------------------------- Members */
+
+.members h2 {
+	margin: 25px 0 0 0;
+}
+
+.members .underline {
+	margin-top: 5px;
+
+	color: #828282;
+}
+
+
+/* ----------------------------------- Member */
+
+.member article > h2 {
+	font-size: 21px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+
+.member .post:first-of-type h2 {
+	margin-top: 10px;
+}
 
