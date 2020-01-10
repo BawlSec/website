@@ -5,9 +5,11 @@ description: {{page.position}}
 page_class: member
 ---
 <h1>{{ page.name }}</h2>
-<p>
+<p class="underline">
   {{ page.position }}
 </p>
+
+{{ content }}
 
 {% assign filtered_posts = site.posts | where: 'author', page.name %}
 {% assign psize = filtered_posts | size %}
