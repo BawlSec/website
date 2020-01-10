@@ -8,11 +8,13 @@ defaults:
       type: "authors"
     values:
       layout: "author"
+      page_class: "member"
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+      page_class: "post"
   - scope:
       path: ""
     values:

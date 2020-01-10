@@ -15,9 +15,6 @@ page_class: blog
         by <a href="{{ author.url }}">{{ author.name }}</a>
       {% endif %}
     </p>
-
-    <p>
-      {{ post.excerpt }}
-    </p>
+    {{ post.excerpt }}
   </div>
 {% endfor %}
