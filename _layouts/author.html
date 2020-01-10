@@ -1,0 +1,23 @@
+---
+layout: default
+title: BawlSec: {{page.name}}
+description: {{page.position}}
+page_class: member
+---
+<h1>{{ page.name }}</h2>
+<p>
+  {{ page.position }}
+</p>
+
+<h2>Posts by {{ page.name }}</h2>
+
+{% assign filtered_posts = site.posts | where: 'author', page.name %}
+{% for post in filtered_posts %}
+	<div class="post">
+	    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	    <p class="underline">Posted on {{ post.date | date_to_string }} by M42D</p>
+	  <p>
+	    {{ post.excerpt }}
+	  </p>
+	</div>
+{% endfor %}

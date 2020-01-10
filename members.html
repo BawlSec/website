@@ -1,66 +1,16 @@
-<html>
-<head>
-	<meta charset="utf-8"/>
-	<meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport"/>
-	<link href="stylesheet.css?rev=2" rel="stylesheet" />
-	<title>BawlSec</title>
-	<meta content="Our team writes about technical topics, CTF writeups, silly stuff, balls, the usual." name="description" />
+---
+layout: default
+title: BawlSec members
+description: Learn all about the esteemed members of the BawlSec society.
+page_class: members
+---
+<h1>BawlSec members</h1>
 
-	<link href="img/favicons/152.png" rel="apple-touch-icon" sizes="152x152" type="image/png"/>
-	<link href="img/favicons/114.png" rel="apple-touch-icon" sizes="114x114" type="image/png"/>
-	<link href="img/favicons/96.png" rel="icon" sizes="96x96" type="image/png"/>
-	<link href="img/favicons/60.png" rel="apple-touch-icon" sizes="60x60" type="image/png"/>
-	<link href="img/favicons/32.png" rel="icon" sizes="32x32" type="image/png"/>
-	<link href="img/favicons/16.png" rel="icon" sizes="16x16" type="image/png"/>
-</head>
+{% for author in site.authors %}
 
-<body class="members">
-
-<div id="wrapper">
-  <aside>
-    <img src="img/bawlsec-w-text.png" title="BawlSec" alt="BawlSec" id="logo" />
-  </aside>
-	<div id="content">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="members.html" class="active">Members</a></li>
-        <li><a href="team.html">About the team</a></li>
-      </ul>
-    </nav>
-
-    <article>
-      <h1>BawlSec members</h1>
-      
-      <div class="member">
-          <h2><a href="member.html">M42D</a></h2>
-          <p class="underline">Founder of BawlSec.</p>
-      </div>
-      
-      <div class="member">
-          <h2><a href="member.html">Koffiebaard</a></h2>
-          <p class="underline">Author of Consolia Comics.</p>
-      </div>
-      
-      <div class="member">
-          <h2><a href="member.html">Divintzero</a></h2>
-          <p class="underline">Founder of BawlSec.</p>
-      </div>
-      
-      <div class="member">
-          <h2><a href="member.html">Ruben</a></h2>
-          <p class="underline">Author of Consolia Comics.</p>
-      </div>
-      
-      <div class="member">
-          <h2><a href="member.html">Cyberwaste42</a></h2>
-          <p class="underline">Author of Consolia Comics.</p>
-      </div>
-
-    </article>
+  <div class="member">
+    <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
+    <p class="underline">{{ author.position }}</p>
   </div>
-</div>
 
-</body>
-</html>
+{% endfor %}

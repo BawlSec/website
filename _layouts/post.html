@@ -1,0 +1,19 @@
+---
+layout: default
+title: BawlSec: {{page.title}}
+description: {{page.title}}
+page_class: post
+---
+{% assign author = site.authors | where: 'name', page.author | first %}
+
+<h1>{{ page.title }}</h1>
+<p class="underline">
+	Written 
+	{% if author %}
+		by <a href="{{ author.url }}">{{ author.name }}</a>
+	{% endif %}
+	
+	on <b>{{ page.date | date_to_string }}</b></p>
+
+
+{{ content }}
