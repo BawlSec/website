@@ -2,6 +2,7 @@
 layout: post
 author: Koffiebaard
 title: Our first BawlSec comic! SQL injection
+description: We are launching a comic series about generic software vulnerabilities and hacking techniques.
 page_class: post
 ---
 We are launching a comic series about generic software vulnerabilities and hacking techniques. We'll start by focusing on the basics and moving up from there.
