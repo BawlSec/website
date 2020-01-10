@@ -1,6 +1,9 @@
 ---
 name: Koffiebaard
 position: Eater of cake. Master of none. Also the author of Consolia Comics.
+title: BawlSec - Koffiebaard
+description: Eater of cake. Master of none. Also the author of Consolia Comics.
+page_class: member
 ---
 
 I'm Tim, a programmer. I have been a back-end developer for about 13 years now. I have been programming since i was 10.
