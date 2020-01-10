@@ -17,6 +17,6 @@ And if those hacking minds would join BawlSec to do CTF events and destroy softw
 
 ## Join us
 
-Do it. Do it now. Join the dark side, for we all know the place where the sun doesn't shine is all around the Bawls.
+Do it. Do it now. Join the dark side, for we all know the place where the sun doesn't shine is near the Bawls.
 
 Ping us on [Twitter](https://twitter.com/BawlSec).
