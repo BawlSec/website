@@ -38,6 +38,7 @@ Take a simple Varnish test for example, verifying the homepage is cached properl
 ```bash
 # Verify 200 OK on homepage, through Varnish
 curl -X GET "http://consolia-comic.com/" -si | grep HTTP | awk '{print $2}' # returns the response code, hopefully 200
+
 # Verify cache hit on homepage
 curl -X GET "http://consolia-comic.com/" -si | grep "X-Cache:" | grep HIT | wc -l # returns 1 on cache hit, 0 on cache miss
 ```

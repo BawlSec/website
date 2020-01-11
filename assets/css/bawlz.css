@@ -29,6 +29,13 @@ p {
 	margin-top: 5px;
 }
 
+pre.highlight {
+    padding: 15px 10px;
+    white-space: pre-wrap;
+    color: #8cc92f;
+    font-size: 15px;
+}
+
 
 /* ----------------------------------- Generic */
 
