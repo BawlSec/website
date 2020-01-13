@@ -152,6 +152,10 @@ article {
 		display: none;
 	}
 
+	#wrapper article .blog_tags {
+		display: block;
+	}
+
 	#wrapper nav {
 		width: 450px;
 		margin-left: auto;
@@ -334,7 +338,15 @@ article {
   text-indent: -5px;
 }
 
+article .blog_tags {
+	margin-top: 50px;
+	margin-left: 0;
+	display: none;
+}
 
+article .blog_tags h2 {
+	color: #1a1a1a
+}
 
 
 /* ----------------------------------- Members */
