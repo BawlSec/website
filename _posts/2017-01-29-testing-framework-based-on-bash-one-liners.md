@@ -71,7 +71,9 @@ You could write the tests like this:
 
 ```bash
 printf "\nVarnish\n"
+
 validate "200 OK on /" $(curl -X GET "http://consolia-comic.com/" -si | grep HTTP | awk ‘{print $2}’) 200
+
 validate "cache hit on /" $(curl -X GET "http://consolia-comic.com/" -si | grep "X-Cache:" | grep HIT | wc -l) 1
 ```
 
