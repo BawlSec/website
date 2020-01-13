@@ -148,6 +148,10 @@ article {
 		text-align: center;
 	}
 
+	#wrapper aside .blog_tags {
+		display: none;
+	}
+
 	#wrapper nav {
 		width: 450px;
 		margin-left: auto;
@@ -302,6 +306,32 @@ article {
 	margin-top: 5px;
 
 	color: #828282;
+}
+
+
+.blog_tags {
+    margin-left: 85px;
+}
+
+.blog_tags h2 {
+	font-size: 21px;
+    margin: 20px 0 0 0;
+    color: #484b48;
+}
+
+.blog_tags ul {
+	list-style: none;
+	margin-top: 5px;
+	padding-left: 0;
+}
+
+.blog_tags ul > li {
+	margin-bottom: 5px;
+}
+
+.blog_tags ul > li:before {
+  content: "- ";
+  text-indent: -5px;
 }
 
 

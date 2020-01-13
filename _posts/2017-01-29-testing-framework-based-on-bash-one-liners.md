@@ -3,6 +3,7 @@ layout: post
 author: Koffiebaard
 title: Testing-framework based on bash one-liners
 description: Using bash one-liners for validation testing makes it easy, powerful, flexible, easy to learn and lightweight. It can be as simple as one file.
+tags: [bash]
 page_class: post
 ---
 

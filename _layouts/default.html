@@ -27,6 +27,19 @@
 		<div id="wrapper">
 		  <aside>
 		    <img src="/assets/images/bawlsec-w-text.png" title="BawlSec" alt="BawlSec" id="logo" />
+
+		    {% if page.show_blog_tags and isitenabledithinknot %}
+			    <div class="blog_tags">
+			    	<h2>Blog tags</h2>
+			    	<ul>
+		    			{% for tag in site.tags %}
+			    			<li><a href="/{{ site.tag_page_dir }}/{{ tag[0] | slugify: 'pretty' }}.html">{{ tag[0] | capitalize }} ({{ tag[1] | size }})</a></li>
+
+			    		{% endfor %}
+			    	</ul>
+			    </div>
+		    {% endif %}
+
 		  </aside>
 			<div id="content">
 

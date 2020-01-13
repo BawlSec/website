@@ -3,18 +3,10 @@ layout: default
 title: BawlSec blog
 description: Our team writes about technical topics, CTF writeups, silly stuff, balls, the usual.
 page_class: blog
+show_blog_tags: true
 ---
 <h1>Blog</h1>
 
 {% for post in site.posts %}
-  <div class="post">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p class="underline">Posted on {{ post.date | date_to_string }} 
-      {% assign author = site.authors | where: 'name', post.author | first %}
-      {% if author %}
-        by <a href="{{ author.url }}">{{ author.name }}</a>
-      {% endif %}
-    </p>
-    {{ post.excerpt }}
-  </div>
+  {% include post.html %}
 {% endfor %}

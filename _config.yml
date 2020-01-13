@@ -15,7 +15,26 @@ defaults:
     values:
       layout: "post"
       page_class: "post"
+      show_blog_tags: true
+  - scope:
+      path: ""
+      type: "tags"
+    values:
+      layout: "tag"
+      page_class: "tag"
+      show_blog_tags: true
   - scope:
       path: ""
     values:
       layout: "default"
+
+gems:
+- jekyll/tagging
+
+tag_page_layout: tag
+tag_page_dir: tags
+tag_page_data:
+  show_blog_tags: true
+  page_class: tag
+  title: BawlSec - tagged posts
+  description: Posts tagged with a tag
