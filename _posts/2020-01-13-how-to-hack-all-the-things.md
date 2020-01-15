@@ -1,4 +1,3 @@
-# How to: hack all the things.
 A question I often hear is _“how do you hack things?”_
 As there are a lot of _“things”_ and hacking is a broad understanding. So this is not a question that can be swiftly answered. But in this article will attempt to explain the process hacking that will cover most or even all forms of hacking while not going into any technical details so the average Joe can understand it as well.
 
